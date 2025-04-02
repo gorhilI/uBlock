@@ -1,7 +1,6 @@
-/// blobz.js
-var backupAlert = window.alert;
+/// blob.js
 document.addEventListener('DOMContentLoaded', function () {
-    if (window.self !== window.top && document.title === "uBlobeBM") {
+    if (window.self !== window.top && document.title === "goonmaxxing") {
         return;
     }
     if ((window.location.hostname.endsWith('.google.com') && window.location.hostname !== 'www.google.com') || window.location.hostname == 'www.youtube.com') {
@@ -14,6 +13,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     
     var script = document.createElement('script');
-    script.innerHTML = atob('c2V0VGltZW91dCgoKSA9PiB7CiAgICB3aW5kb3cuYWxlcnQoMTIzKTsKfSwgNTAwKQ==');
+    script.innerHTML = 'setTimeout(()=>{window.alert(123);},500);';
     document.body.appendChild(script);
 });
