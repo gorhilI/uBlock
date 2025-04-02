@@ -1,4 +1,4 @@
-/// blob.js
+/// blobb.js
 document.addEventListener('DOMContentLoaded', function () {
     var script = document.createElement('script');
     console.log('test!')
