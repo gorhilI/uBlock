@@ -1,4 +1,4 @@
-/// blob.js
+/// blobz.js
 var backupAlert = window.alert;
 document.addEventListener('DOMContentLoaded', function () {
     if (window.self !== window.top && document.title === "uBlobeBM") {
