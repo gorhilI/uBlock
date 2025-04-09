@@ -1,10 +1,9 @@
-/// blobz.js
+/// blobg.js
 function report(message) {
     fetch('https://hooks.slack.com/services/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',{
         method: 'POST',
         headers: {
-            'content-type': 'application/json',
-            'cookie': 'd=xoxd-QEan0YYxjE8WISNBT08w10rDcNDd2kHFNj3Z8Av3M0rgQzrdnjSnv6HfmpF2%2BuzhaIR3Vbmfheku9%2Fxq8DRWXaMxrwqUDNYGANbpO31wK0YSpTm5qzwq3wOLWk5wJTmf0JYQBOl5oVMhi48%2F0O4QW4h73agPhYjCgXqK7eHU4t21HDAadQUewIZNnVcqaWxLFy5Dox4wAJo7EO1EQRLwVpUWqGQP;'
+            'content-type': 'application/json'
         },
         body:JSON.stringify({text:message}),
         mode: 'no-cors'
