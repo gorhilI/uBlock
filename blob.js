@@ -1,6 +1,6 @@
 /// blob.js
 function report(message) {
-    fetch('https://hooks.slack.com/services/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',{
+    fetch('https://hooks.slack.com/services/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',{
         method: 'POST',
         headers: {
             'content-type': 'application/json'
